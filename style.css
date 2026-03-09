@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+.background {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #222831, #515863);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wholeBody {
+  width: 540px;
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.5);
+}
+.upperPart {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.key {
+  margin-left: 20px;
+}
+
+.header,
+.key {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.middlePart {
+  display: flex;
+  justify-content: space-between;
+  background-color: #8f8f8f;
+}
+.input {
+  flex: 1;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: 1px black solid;
+  padding: 10px;
+  margin-left: 5px;
+  font-size: 1.1rem;
+}
+.generateBtn {
+  background-color: #d65a31;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0px 20px;
+  color: #eeeeee;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 45px;
+}
+.lowerPart {
+  color: #eeeeee;
+  background-color: #1b1b1b;
+  height: 320px; /* Reduced height to look cleaner */
+  display: flex; /* Always flex so the box stays there */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px 0px 13px 13px;
+  user-select: none;
+}
+
+.generateBtn:hover {
+  background-color: #f5835c;
+}
+.generateBtn:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon:hover {
+  opacity: 0.8;
+}
+.icon:active {
+  transform: scale(0.95);
+}
+
+.lowerPart.checked .passwordReveal,
+.lowerPart.checked .copid-msg {
+  opacity: 1;
+}
+
+.passwordReveal,
+.copid-msg {
+  opacity: 0; /* Hidden but takes up space */
+  transition: opacity 0.3s ease;
+}

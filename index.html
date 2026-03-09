@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Password Generator Project</title>
+  </head>
+  <body>
+    <!-- the whole background -->
+    <div class="background">
+      <!-- App Body total -->
+      <div id="wholeBody">
+        <!-- upper part title of app -->
+        <div class="upperPart">
+          <h2 class="header">Password Generator</h2>
+          <i class="fa-solid fa-key fa-2x key"></i>
+        </div>
+        <!-- middle part where to generate the password -->
+        <div class="middlePart">
+          <!-- middle part - input area and copy icon  -->
+          <div class="input-container">
+            <input class="input" placeholder="Password Generate here" />
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+            >
+              <path
+                d="M480 400L288 400C279.2 400 272 392.8 272 384L272 128C272 119.2 279.2 112 288 112L421.5 112C425.7 112 429.8 113.7 432.8 116.7L491.3 175.2C494.3 178.2 496 182.3 496 186.5L496 384C496 392.8 488.8 400 480 400zM288 448L480 448C515.3 448 544 419.3 544 384L544 186.5C544 169.5 537.3 153.2 525.3 141.2L466.7 82.7C454.7 70.7 438.5 64 421.5 64L288 64C252.7 64 224 92.7 224 128L224 384C224 419.3 252.7 448 288 448zM160 192C124.7 192 96 220.7 96 256L96 512C96 547.3 124.7 576 160 576L352 576C387.3 576 416 547.3 416 512L416 496L368 496L368 512C368 520.8 360.8 528 352 528L160 528C151.2 528 144 520.8 144 512L144 256C144 247.2 151.2 240 160 240L176 240L176 192L160 192z"
+              />
+            </svg>
+          </div>
+          <!-- middle part - generate button -->
+          <div>
+            <button class="generateBtn">Generate</button>
+          </div>
+        </div>
+        <!-- lowerpart where the notification msg show up as confirmation of copied -->
+        <div class="lowerPart">
+          <h3 class="passwordReveal">
+            Password: <span id="passSpan">xxxxxx</span>
+          </h3>
+          <h3 class="copid-msg">Copied!</h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
